@@ -6,7 +6,7 @@
 
 1. git clone this
 2. install docker,docker compose
-3. start docker deamon
-4. cd dockerphp 
-5. Modify the. Env file , be ensure that the two options, RUN_USER_UID and RUN_USER_GID are consistent with the uid and gid of your working directory.
-6. run docker-compose up -d nginx
+3. 运行 docker
+4. 进入 dockerphp ，新建 workspace/app 这个目录可以作为默认的根目录，需要有多个站点需求，可以去 nginx/sites 下修改 conf 配置文件
+5. 修改 . env , 确保 RUN_USER_UID and RUN_USER_GID 这两个值和 workspace 归属的用户和用户组的ID一致
+6. 运行 docker-compose up -d nginx
